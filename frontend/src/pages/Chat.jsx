@@ -187,24 +187,9 @@ export default function Chat() {
               to="/"
               style={{ display: "flex", alignItems: "center", gap: 8, textDecoration: "none", color: "var(--ink)" }}
             >
-          <div
-            style={{
-              width: 26,
-              height: 26,
-              borderRadius: 6,
-              background: "var(--primary)",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2">
-              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-              <path d="M14 2v6h6" />
-            </svg>
-          </div>
+          <img src="/logo.png" alt="ChatbotRH" style={{ width: 26, height: 26, borderRadius: 6, objectFit: "contain" }} />
           <span style={{ fontFamily: "var(--font-display)", fontWeight: 600, fontSize: 16 }}>
-            DocuRH
+            ChatbotRH
           </span>
         </Link>
         <button onClick={() => setIsSidebarOpen(false)} style={{ background: "transparent", border: "none", cursor: "pointer", color: "var(--ink-muted)", display: "flex" }}>
@@ -379,23 +364,17 @@ export default function Chat() {
                 textAlign: "center",
               }}
             >
-              <div
+              <img
+                src="/logo.png"
+                alt="ChatbotRH"
                 style={{
                   width: 64,
                   height: 64,
-                  borderRadius: "50%",
-                  background: "var(--primary)",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
+                  borderRadius: "16px",
+                  objectFit: "contain",
                   marginBottom: 20,
                 }}
-              >
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2">
-                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-                  <path d="M14 2v6h6" />
-                </svg>
-              </div>
+              />
               <h2 style={{ fontSize: 26, marginBottom: 8 }}>Bonjour, {user ? user.nom.split(" ")[0] : ""}</h2>
               <p style={{ color: "var(--ink-muted)", fontSize: 15, marginBottom: 36 }}>
                 Posez une question RH — congés, horaires, procédures administratives.
@@ -537,7 +516,7 @@ export default function Chat() {
                       fontSize: 14,
                     }}
                   >
-                    DocuRH recherche dans les documents…
+                    ChatbotRH recherche dans les documents…
                   </div>
                 </div>
               )}

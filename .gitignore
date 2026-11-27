@@ -5,3 +5,5 @@ __pycache__/
 *.db
 chroma_db/
 dist/
+bm25_index.pkl
+index_state.json

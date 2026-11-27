@@ -77,7 +77,7 @@ def chat(
                 sources.append({
                     "document": p["source"],
                     "page": p["page"],
-                    "similarite": p["similarity"],
+                    "similarite": p.get("rerank_score") or p.get("similarity", 0),
                 })
         pieces_jointes = engine.get_attachments(passages)
 

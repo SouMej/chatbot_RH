@@ -48,7 +48,7 @@ export default function Register() {
   return (
     <AuthLayout
       title="Créer un compte"
-      subtitle="Rejoignez DocuRH pour accéder à l'assistant RH."
+      subtitle="Rejoignez ChatbotRH pour accéder à l'assistant RH."
       footer={
         <>
           Déjà un compte ?{" "}
@@ -63,7 +63,7 @@ export default function Register() {
           label="Nom complet"
           value={nom}
           onChange={(e) => setNom(e.target.value)}
-          placeholder="Sonia Mejri"
+          placeholder="Nom et prénom"
         />
         <FormField
           label="Adresse e-mail"

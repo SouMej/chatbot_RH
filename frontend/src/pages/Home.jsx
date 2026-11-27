@@ -14,24 +14,9 @@ export default function Home() {
         }}
       >
         <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-          <div
-            style={{
-              width: 32,
-              height: 32,
-              borderRadius: 8,
-              background: "var(--primary)",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2">
-              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-              <path d="M14 2v6h6" />
-            </svg>
-          </div>
+          <img src="/logo.png" alt="ChatbotRH" style={{ width: 32, height: 32, borderRadius: 8, objectFit: "contain" }} />
           <span style={{ fontFamily: "var(--font-display)", fontWeight: 600, fontSize: 18 }}>
-            DocuRH
+            ChatbotRH
           </span>
         </div>
 
@@ -81,7 +66,7 @@ export default function Home() {
             color: "var(--ink-muted)",
           }}
         >
-          DocuRH est l'assistant interne qui répond aux questions de congés, d'horaires et de
+          ChatbotRH est l'assistant interne qui répond aux questions de congés, d'horaires et de
           procédures administratives — en citant toujours le document officiel utilisé, et en
           fonctionnant entièrement en local pour protéger vos données.
         </p>
@@ -166,7 +151,7 @@ export default function Home() {
           borderTop: "1px solid var(--border)",
         }}
       >
-        DocuRH — prototype interne, projet de stage
+        ChatbotRH — prototype interne, projet de stage
       </footer>
     </div>
   );
